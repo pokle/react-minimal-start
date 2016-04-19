@@ -5,10 +5,8 @@
   "description": "DESCRIBE YOUR APP...",
   "scripts": {
     "clean": "rm -rf public/build",
-
     "prebuild": "npm run clean && (test -d node_modules || npm install) && mkdir -p public/build",
-    "build": "     env NODE_ENV=production  browserify --entry src/app.js --outfile public/build/bundle.js        --verbose --transform [ babelify ]",
-
+    "build": "env NODE_ENV=production  browserify --entry src/app.js --outfile public/build/bundle.js --verbose --transform [ babelify ] --global-transform [ uglifyify ]",
     "prebuild:live": "(test -d node_modules || npm install --progress) && mkdir -p public/build",
     "build:live": "env NODE_ENV=development budo src/app.js:build/bundle.js --live --open --dir public -- --debug --verbose --transform [ babelify ]"
   },
@@ -24,6 +22,7 @@
     "babel-preset-react": "^6.5.0",
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
-    "budo": "^8.1.0"
+    "budo": "^8.1.0",
+    "uglifyify": "^3.0.1"
   }
 }

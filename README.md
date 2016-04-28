@@ -17,7 +17,7 @@ What you need to figure out on your own:
 
 1. Start the watch script that re-compiles your app
 
-		npm run build:live
+		npm start
 
 2. Make an edit to your code, and save it in your editor
 3. Look at the result in the reloaded browser

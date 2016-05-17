@@ -8,7 +8,8 @@
     "prebuild": "npm run clean && npm install",
     "build": "env NODE_ENV=production browserify --entry src/app.js --outfile public/build/bundle.js --verbose --transform [ babelify ] --global-transform [ uglifyify ]",
     "prebuild:live": "npm run clean && npm install --progress",
-    "build:live": "env NODE_ENV=development budo src/app.js:build/bundle.js --live --open --dir public -- --debug --verbose --transform [ babelify ]",
+    "build:live": "env NODE_ENV=development budo src/app.js:build/bundle.js --open --dir public --live  -- --debug --verbose --transform [ babelify ]",
+    "build:hmr": "env NODE_ENV=development budo src/app.js:build/bundle.js --open --dir public -- --debug --verbose --transform [ babelify ] --plugin livereactload",
     "start": "npm run build:live"
   },
   "keywords": [],
@@ -19,11 +20,14 @@
     "react-dom": "^15.0.2"
   },
   "devDependencies": {
+    "babel-plugin-react-transform": "2.0.2",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
     "babelify": "^7.2.0",
     "browserify": "^13.0.1",
     "budo": "^8.1.0",
+    "livereactload": "2.2.3",
+    "react-proxy": "1.1.8",
     "uglifyify": "^3.0.1"
   }
 }

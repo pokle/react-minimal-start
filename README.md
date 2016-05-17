@@ -9,7 +9,6 @@ What you get:
 	- Live reload of your browser thanks to Budo
 
 What you need to figure out on your own:
-	- Minimisation - Use uglify?
 	- Tests - Use your own test tools
 	- Data management - How to add in Redux, etc.
 

@@ -11,11 +11,6 @@
     "build:live": "env NODE_ENV=development budo src/app.js:build/bundle.js --open --dir public --live  -- --debug --verbose --transform [ babelify ]",
     "build:hmr": "env NODE_ENV=development budo src/site.js:build/bundle.js --open --dir public -- --debug --verbose --transform babelify --plugin livereactload",
     
-    "watch:bundle": "watchify src/site.js -v -t babelify -p livereactload --dir public -o public/build/bundle.js",
-
-    "bundle:prod": "NODE_ENV=production browserify src/app.js -v -t babelify -g uglifyify -o public/build/bundle.js",
-    "watch": "budo --dir public & npm run watch:bundle & wait",
-
     "start": "npm run build:live"
   },
   "keywords": [],

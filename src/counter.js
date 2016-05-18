@@ -7,7 +7,6 @@ export default class Counter extends React.Component {
     this.state = {value: props.initialValue || 0}
   }
 
-
   componentDidMount() {
     const self = this
     tick()

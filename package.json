@@ -9,7 +9,7 @@
     "build": "env NODE_ENV=production browserify --entry src/app.js --outfile public/build/bundle.js --verbose --transform [ babelify ] --global-transform [ uglifyify ]",
     "prebuild:live": "npm run clean && npm install --progress",
     "build:live": "env NODE_ENV=development budo src/app.js:build/bundle.js --open --dir public --live  -- --debug --verbose --transform [ babelify ]",
-    "build:hmr": "env NODE_ENV=development budo src/site.js:build/bundle.js --open --dir public -- --debug --verbose --transform babelify --plugin livereactload",
+    "build:hmr": "env NODE_ENV=development budo src/app.js:build/bundle.js --open --dir public -- --debug --verbose --transform babelify --plugin livereactload",
     
     "start": "npm run build:live"
   },

@@ -1,22 +1,20 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import Counter from "./counter"
+import Hello from './samples/hello'
+import Counter from './samples/counter'
 
-export default class App extends React.Component {
+
+class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hi!</h1>
-        Edit me in src/app.js
-        <Counter
-          initialValue={0}
-          step={1}
-          interval={1000} />
+        <Hello/>
+        <Counter/>
       </div>
     )
   }
 }
 
 
-ReactDOM.render(<p><App/></p>, document.getElementById("app"))
+ReactDOM.render(<App/>, document.getElementById("app"))

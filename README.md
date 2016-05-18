@@ -1,20 +1,19 @@
 # react-minimal-start
 
-A minimal React starter kit without the batteries.
+A minimal React starter kit that you can build upon.
 
 What you get:
-	- ES2015 (ES6) compilation (Babel)
+	- Javascript ES2015 (ES6) compilation (Babel)
 	- Npm is your package manager and build tool (no gulp / grunt bloat)
-	- Browserify lets you require('modules') in the browser
-	- Live reload of your browser thanks to Budo
+	- Live reload in the browser (budo + livereactload)
 
 What you need to figure out on your own:
 	- Tests - Use your own test tools
-	- Data management - How to add in Redux, etc.
+	- State management - Redux, Firebase, etc.
 
 ## Live reload
 
-1. Start the watch script that re-compiles your app
+1. Start the watch script
 
 		npm start
 

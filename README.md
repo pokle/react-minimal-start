@@ -3,19 +3,19 @@
 A minimal React starter kit that you can build upon.
 
 What you get:
-	- Javascript ES2015 (ES6) compilation (Babel)
-	- Npm is your package manager and build tool (no gulp / grunt bloat)
-	- Live reload in the browser (budo + livereactload)
+- Javascript ES2015 (ES6) compilation (Babel)
+- Npm is your package manager and build tool (no gulp / grunt bloat)
+- Live reload in the browser (budo + livereactload)
 
 What you need to figure out on your own:
-	- Tests - Use your own test tools
-	- State management - Redux, Firebase, etc.
+- Tests - Use your own test tools
+- State management - Redux, Firebase, etc.
 
 ## Live reload
 
 1. Start the watch script
 
-		npm start
+	npm start
 
 2. Make an edit to your code, and save it in your editor
 3. Look at the result in the reloaded browser

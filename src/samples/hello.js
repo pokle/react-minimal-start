@@ -4,7 +4,7 @@ export default class Hello extends React.Component {
   
   constructor(props) {
     super(props)
-    this.state = { name: "there" }
+    this.state = { name: props.name }
     this.nameChanged = this.nameChanged.bind(this)
   }
 

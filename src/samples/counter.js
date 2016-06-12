@@ -1,5 +1,7 @@
 import React from 'react'
 
+// Shows you how to integrate with plain old javascript events
+// tldr; this.setState() is how you communicate from the outside world
 export default class Counter extends React.Component {
   
   constructor(props) {
@@ -26,7 +28,10 @@ export default class Counter extends React.Component {
 
   render() {
     return (
-      <h1>{this.state.value}</h1>
+      <p>
+        Seconds you've spent staring at this page: 
+        {this.state.value}
+      </p>
     )
   }
 }

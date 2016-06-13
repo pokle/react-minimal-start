@@ -11,6 +11,14 @@ What you need to figure out on your own:
 - Tests - Use your own test tools
 - State management - Redux, Firebase, etc.
 
+## How to start
+
+Clone this project:
+
+    git clone https://github.com/pokle/react-minimal-start hello-hello
+    cd hello-hello
+    rm -rf .git
+
 ## Live reload
 
 1. Start the watch script
